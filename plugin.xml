@@ -52,35 +52,36 @@
     <platform name="ios">  
     	<config-file target="*-Info.plist" parent="CFBundleURLTypes">
 		<key>NSLocationWhenInUseUsageDescription</key>
-			<string>This application requires location services to work</string>
-			<key>NSAppTransportSecurity</key> 
-			<dict>
-			    <key>NSAllowsArbitraryLoads</key> 
-			    <true/> 
-			</dict>
-		</config-file>
+		<string>This application requires location services to work</string>
+		<key>NSAppTransportSecurity</key> 
+		<dict>
+		    <key>NSAllowsArbitraryLoads</key> 
+		    <true/> 
+		</dict>
+		<key>NSCalendarsUsageDescription</key>
+		<string>This application requires calendar services to work</string>
+	</config-file>
 		
-		<header-file src="GADInMobiExtras.h" />
-		<header-file src="GADMAdapterInMobi.h" />		
-        <source-file src="libAdapterInMobi.a" framework="true" />
-		
-		<framework src="src/ios/InMobiSDK.framework" custom="true"/>
-		<framework src="AdSupport.framework" weak="true" />
-		<framework src="AudioToolbox.framework" weak="true" />
-		<framework src="AVFoundation.framework" />
-		<framework src="CoreLocation.framework" />
-		<framework src="CoreTelephony.framework" />
-		<framework src="EventKit.framework" />
-		<framework src="EventKitUI.framework" />
-		<framework src="MediaPlayer.framework" />
-		<framework src="MessageUI.framework" />
-		<framework src="SafariServices.framework" />
-		<framework src="Security.framework" />
-		<framework src="Social.framework" weak="true" />
-		<framework src="StoreKit.framework" />
-		<framework src="SystemConfiguration.framework" />
-		<framework src="libsqlite3.0.dylib" />
-		<framework src="libz.dylib" />
+	<header-file src="GADInMobiExtras.h" />
+	<header-file src="GADMAdapterInMobi.h" />		
+	<source-file src="libAdapterInMobi.a" framework="true" />
+	<framework src="src/ios/InMobiSDK.framework" custom="true"/>
+	<framework src="AdSupport.framework" weak="true" />
+	<framework src="AudioToolbox.framework" weak="true" />
+	<framework src="AVFoundation.framework" />
+	<framework src="CoreLocation.framework" />
+	<framework src="CoreTelephony.framework" />
+	<framework src="EventKit.framework" />
+	<framework src="EventKitUI.framework" />
+	<framework src="MediaPlayer.framework" />
+	<framework src="MessageUI.framework" />
+	<framework src="SafariServices.framework" />
+	<framework src="Security.framework" />
+	<framework src="Social.framework" weak="true" />
+	<framework src="StoreKit.framework" />
+	<framework src="SystemConfiguration.framework" />
+	<framework src="libsqlite3.0.dylib" />
+	<framework src="libz.dylib" />
     </platform>
 
 </plugin>
