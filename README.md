@@ -14,9 +14,8 @@ In your application project directory:
 
 ```bash
 
-cordova plugin add https://github.com/rebrandsoftware/cordova-plugin-admob-mediation-inmobi.git --save
+cordova plugin add https://github.com/argo-qu/cordova-plugin-admob-mediation-inmobi.git --save
 
-(cordova plugin add cordova-plugin-admob-mediation-inmobi)
 ```
 
 ## Usage ##
